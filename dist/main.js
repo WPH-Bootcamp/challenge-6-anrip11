@@ -11,10 +11,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 console.log('Book Management Application - Week 6');
 console.log('=====================================');
 // Mulai pengujian di bawah ini
-// src/main.ts
+// 1. Import fungsi-fungsi
 const bookManager_1 = require("./functions/bookManager");
 console.log('--- Memulai Pengujian Aplikasi Buku ---');
-// 1. Menguji fungsi addBook
+// 2. Menguji fungsi addBook
 (0, bookManager_1.addBook)({
     title: 'Bukan Manusia',
     author: 'Jane',
@@ -30,12 +30,12 @@ console.log('--- Memulai Pengujian Aplikasi Buku ---');
     author: 'Alif',
     publicationYear: 2020,
 });
-// 2. Menguji fungsi listBooks untuk melihat semua buku
+// 3. Menguji fungsi listBooks untuk melihat semua buku
 (0, bookManager_1.listBooks)();
-// 3. Menguji fungsi searchBook dengan parameter (mencari buku spesifik)
+// 4. Menguji fungsi searchBook dengan parameter (mencari buku spesifik)
 (0, bookManager_1.searchBook)('seru');
-// 4. Menguji fungsi searchBook tanpa parameter (harus menampilkan semua buku)
+// 5. Menguji fungsi searchBook tanpa parameter (harus menampilkan semua buku)
 (0, bookManager_1.searchBook)();
-// 5. Menguji fungsi searchBook dengan judul yang tidak ada
+// 6. Menguji fungsi searchBook dengan judul yang tidak ada
 (0, bookManager_1.searchBook)('Harry Potter');
 console.log('\n--- Pengujian Selesai ---');

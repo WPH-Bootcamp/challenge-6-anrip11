@@ -4,5 +4,5 @@
 
 import { Book } from '../types';
 
-// Membuat array kosong dengan tipe Book[]
+// Membuat array kosong
 export const books: Book[] = [];

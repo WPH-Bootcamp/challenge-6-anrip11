@@ -4,7 +4,7 @@
 // Pastikan tipe data untuk setiap properti sudah sesuai dengan kebutuhan
 
 export type Book = {
-  title: string;
-  author: string;
-  publicationYear: number;
+  title: string; // Judul Buku
+  author: string; // Nama Penulis Buku
+  publicationYear: number; // Tahun Terbit buku
 };

@@ -19,14 +19,10 @@
 // Petunjuk: jika parameter title diberikan, cari buku yang cocok
 //           jika tidak diberikan, tampilkan semua buku atau berikan informasi yang sesuai
 
-// src/functions/bookManager.ts
 import { Book } from '../types';
 import { books } from '../data/books';
 
-/**
- * Fungsi untuk menambahkan buku ke dalam array
- * Menerima parameter bertipe Book dan menampilkan pesan konfirmasi
- */
+// Fungsi addBook (menambahkan buku baru ke dalam koleksi)
 export const addBook = (newBook: Book): void => {
   books.push(newBook);
   console.log(
@@ -34,10 +30,7 @@ export const addBook = (newBook: Book): void => {
   );
 };
 
-/**
- * Fungsi untuk menampilkan semua buku dalam array
- * Menampilkan data dengan format yang jelas
- */
+// Fungsi listBooks (menampilkan semua buku yang tersimpan)
 export const listBooks = (): void => {
   console.log('\n=== Daftar Seluruh Buku ===');
   if (books.length === 0) {
@@ -51,10 +44,7 @@ export const listBooks = (): void => {
   }
 };
 
-/**
- * Fungsi untuk mencari buku berdasarkan judul (opsional)
- * Jika parameter tidak diberikan, akan menampilkan semua buku
- */
+// Fungsi searchBook (mencari buku berdasarkan judul)
 export const searchBook = (title?: string): void => {
   console.log(`\n=== Hasil Pencarian: ${title || 'Semua Buku'} ===`);
 

@@ -12,12 +12,12 @@ console.log('=====================================');
 
 // Mulai pengujian di bawah ini
 
-// src/main.ts
+// 1. Import fungsi-fungsi
 import { addBook, listBooks, searchBook } from './functions/bookManager';
 
 console.log('--- Memulai Pengujian Aplikasi Buku ---');
 
-// 1. Menguji fungsi addBook
+// 2. Menguji fungsi addBook
 addBook({
   title: 'Bukan Manusia',
   author: 'Jane',
@@ -36,16 +36,16 @@ addBook({
   publicationYear: 2020,
 });
 
-// 2. Menguji fungsi listBooks untuk melihat semua buku
+// 3. Menguji fungsi listBooks untuk melihat semua buku
 listBooks();
 
-// 3. Menguji fungsi searchBook dengan parameter (mencari buku spesifik)
+// 4. Menguji fungsi searchBook dengan parameter (mencari buku spesifik)
 searchBook('seru');
 
-// 4. Menguji fungsi searchBook tanpa parameter (harus menampilkan semua buku)
+// 5. Menguji fungsi searchBook tanpa parameter (harus menampilkan semua buku)
 searchBook();
 
-// 5. Menguji fungsi searchBook dengan judul yang tidak ada
+// 6. Menguji fungsi searchBook dengan judul yang tidak ada
 searchBook('Harry Potter');
 
 console.log('\n--- Pengujian Selesai ---');

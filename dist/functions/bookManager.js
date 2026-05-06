@@ -3,19 +3,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.searchBook = exports.listBooks = exports.addBook = void 0;
 const books_1 = require("../data/books");
-/**
- * Fungsi untuk menambahkan buku ke dalam array
- * Menerima parameter bertipe Book dan menampilkan pesan konfirmasi
- */
+// Fungsi addBook (menambahkan buku baru ke dalam koleksi)
 const addBook = (newBook) => {
     books_1.books.push(newBook);
     console.log(`Berhasil menambahkan buku: "${newBook.title}" oleh ${newBook.author}`);
 };
 exports.addBook = addBook;
-/**
- * Fungsi untuk menampilkan semua buku dalam array
- * Menampilkan data dengan format yang jelas
- */
+// Fungsi listBooks (menampilkan semua buku yang tersimpan)
 const listBooks = () => {
     console.log('\n=== Daftar Seluruh Buku ===');
     if (books_1.books.length === 0) {
@@ -28,10 +22,7 @@ const listBooks = () => {
     }
 };
 exports.listBooks = listBooks;
-/**
- * Fungsi untuk mencari buku berdasarkan judul (opsional)
- * Jika parameter tidak diberikan, akan menampilkan semua buku
- */
+// Fungsi searchBook (mencari buku berdasarkan judul)
 const searchBook = (title) => {
     console.log(`\n=== Hasil Pencarian: ${title || 'Semua Buku'} ===`);
     if (!title) {

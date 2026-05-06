@@ -4,5 +4,5 @@
 // Pertimbangkan tipe data yang tepat untuk array ini berdasarkan definisi Book yang sudah dibuat
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.books = void 0;
-// Membuat array kosong dengan tipe Book[]
+// Membuat array kosong
 exports.books = [];
